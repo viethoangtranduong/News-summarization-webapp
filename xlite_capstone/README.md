@@ -7,7 +7,7 @@ The file structure for the web app running at ""
 - ```requirements.txt```: the packages required to run the flask app
 - ```README.md```: the introductory file
 - ```summary```: the folder containing the models for summarization codes
-    - ```vecrtorization/golve.6B.50d.txt```: the embeddings for vectorizing the text to float
+    - ```vectorization/glove.6B.50d.txt```: the embeddings for vectorizing the text to float
     - ```summarizer_{x}_model.py```: the function to summarize based on any given models 
 - ```get_content```: The folder containing python files to get content from external sourcesc(crawling functions)
     - ```get_{x}.py```: file to crawl the content from x website

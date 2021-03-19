@@ -6,3 +6,19 @@
 
 # img output
 /xlite_capstone/static/image_output/*
+
+
+# Elastic Beanstalk Files
+/full_capstone/.elasticbeanstalk/*
+/full_capstone/.elasticbeanstalk/*.cfg.yml
+/full_capstone/.elasticbeanstalk/*.global.yml
+
+# embeddings 
+/full_capstone/summary/vectorization/glove.6B.50d.txt
+/full_capstone/summary/models/*
+
+#venv
+/full_capstone/capstone_venv
+
+# images output
+/full_capstone/static/image_output/*
