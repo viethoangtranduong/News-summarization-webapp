@@ -46,7 +46,9 @@ pip install -r requirements.txt
 (or pip3, depending on your default pip version)
 
 ### Step 3: Unzip the embeddings
-Unzip the embeddings file at ```xlite_capstone/summary/vectorization/glove.6B.50d.zip``` and store the ```glove.6B.50d.txt``` file under ```xlite_capstone/summary/vectorization/glove.6B.50d.txt```
+Unzip the embeddings file at ```xlite_capstone/summary/vectorization/glove.6B.50d.zip``` and store the ```glove.6B.50d.txt``` file under ```xlite_capstone/summary/vectorization/glove.6B.50d.txt```   
+
+The embeddings can also be found [here](https://drive.google.com/drive/folders/1ifPOnWqUXv2f5NR8nHgdAdUwFQVr-DiO?usp=sharing).
 
 ### Step 4: Run web app:
 ```

@@ -8,9 +8,10 @@ Website: http://viethoangtranduong.pythonanywhere.com/
 
 There are 2 versions:  
 The ```full_capstone``` includes all the functionalities.  
-The ```xlite_capstone``` is the smaller version, with all the functionalities except the Bert summarization models (HuggingFace + Bert-extractive).
+The ```xlite_capstone``` is the smaller version, with all the functionalities except the Bert summarization models (HuggingFace + Bert-extractive).  
 The ```Demo capstone``` is the Jupyter notebooks demoing every functions and its output for the web app.
 
 The current deploying model on the website is the ```xlite_capstone``` version to maintain the efficient cost. The code structures are listed within each folder.  
 
+The embeddings and the hgf models can be found [here](https://drive.google.com/drive/folders/1ifPOnWqUXv2f5NR8nHgdAdUwFQVr-DiO?usp=sharing).
 

@@ -48,7 +48,9 @@ pip install -r requirements.txt
 For Pytorch, follow the instructions here to make it most compatible with your device: https://pytorch.org/get-started/locally/
 
 ### Step 3: Unzip the embeddings
-Unzip the embeddings file at ```full_capstone/summary/vectorization/glove.6B.50d.zip``` and store the ```glove.6B.50d.txt``` file under ```full_capstone/summary/vectorization/glove.6B.50d.txt```
+Unzip the embeddings file at ```full_capstone/summary/vectorization/glove.6B.50d.zip``` and store the ```glove.6B.50d.txt``` file under ```full_capstone/summary/vectorization/glove.6B.50d.txt```  
+
+The embeddings and the hgf models can also be found [here](https://drive.google.com/drive/folders/1ifPOnWqUXv2f5NR8nHgdAdUwFQVr-DiO?usp=sharing).
 
 ### Step 4: Run web app:
 ```
