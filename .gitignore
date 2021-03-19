@@ -25,3 +25,10 @@
 
 # cache
 /full_capstone/build/*
+
+# embeddings & models
+/Demo capstone/Summarization/summary/vectorization/*
+/Demo capstone/Summarization/summary/models/*
+/Demo capstone/Crawling/summary/vectorization/*
+
+
