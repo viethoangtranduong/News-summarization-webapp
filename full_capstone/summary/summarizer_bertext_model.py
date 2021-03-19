@@ -13,12 +13,24 @@ custom_model = transformers.AutoModel.from_pretrained('bert-base-cased', config=
 summarizer_bert_model = summarizer_bert(custom_model=custom_model, custom_tokenizer=custom_tokenizer, )
 
 def summarizer_bertext_get(text, percent_sentences):
+  """summarizing using bert extractive method with few heuristics
+
+  Args:
+      text (str): the text to summarize
+      percent_sentences (int, optional): percent to retain. Defaults to 50.
+
+  Returns:
+      dictionary with the method [method], summary [sentences], number of sentences [summary_num_sentences]
+  """    
   num_sentences = int(percent_sentences / 100 * len(sent_tokenize(text)))
+  
+  # handle failing cases
   try:
 
     # Filter unneccessary information
     citations = {"References:", "Reference:", "Citations:", "Citation:", "Resources:", "Bibliography:" "Resource:", "Author Bio:", "Author bio:", "author bio:"}
 
+    # remove citations
     current_l = len(text)
     for word in citations:
       try:
@@ -38,6 +50,7 @@ def summarizer_bertext_get(text, percent_sentences):
       if sentence[-1] in {"?", ":"} or sentence[-5:-1] in {'here', 'poor'} or sentence[:2] in {"By"} or len(sentence) < 10:
         filtered.add(sentence)
     
+    # get the new text after filtering
     new_sentences = [" " + sentence for sentence in sentences if sentence not in filtered]
     new_text = "".join(new_sentences)
     total_sentences = len(new_sentences)
@@ -51,11 +64,15 @@ def summarizer_bertext_get(text, percent_sentences):
     # output
     output = {'sentences': summary, 'summary_num_sentences': len(sentences), "method": "bert"}
     print("Bert transformer works!")
+  
+  
+  # if failed, use aylien
   except:
     
   
     output = {}
 
+    # send request to aylien
     client = textapi.Client("79e389d3", "1bc2400da0cb4745c30fb68b67e5e5cf")
 
     out = client.Summarize({'sentences_number': num_sentences,

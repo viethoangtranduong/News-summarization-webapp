@@ -21,22 +21,22 @@ The file structure for the web app running at ""
 
 ## Steps to run the code
 
-Move the local directory to the current xlite_capstone folder
+Move the local directory to the current full_capstone folder
 
 ### Step 1: virtual environment
 #### 1.1. Create virtual environment:
 ```
-virtualenv xlite_capstone_venv
+virtualenv capstone_venv
 ```
 
 #### 1.2. Activate virtual environment
 On Windows: 
 ```
-xlite_capstone_venv\Scripts\activate
+capstone_venv\Scripts\activate
 ```
 On Linux/Ubuntu:
 ```
-xlite_capstone_venv/bin/activate
+capstone_venv/bin/activate
 ```
 
 ### Step 2: Install dependencies
@@ -48,7 +48,7 @@ pip install -r requirements.txt
 For Pytorch, follow the instructions here to make it most compatible with your device: https://pytorch.org/get-started/locally/
 
 ### Step 3: Unzip the embeddings
-Unzip the embeddings file at ```xlite_capstone/summary/vectorization/glove.6B.50d.zip``` and store the ```glove.6B.50d.txt``` file under ```xlite_capstone/summary/vectorization/glove.6B.50d.txt```
+Unzip the embeddings file at ```full_capstone/summary/vectorization/glove.6B.50d.zip``` and store the ```glove.6B.50d.txt``` file under ```full_capstone/summary/vectorization/glove.6B.50d.txt```
 
 ### Step 4: Run web app:
 ```
