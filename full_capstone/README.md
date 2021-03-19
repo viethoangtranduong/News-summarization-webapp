@@ -1,7 +1,7 @@
 # What's new 
 ## _The web app repo_
 
-The file structure for the web app running at ""
+The file structure for this ```full_capstone```:
 
 - ```application.py```: the flask app framework
 - ```requirements.txt```: the packages required to run the flask app
