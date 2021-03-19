@@ -7,6 +7,7 @@ The file structure for this ```Demo capstone```:
 - ```Crawling```: The folder contains all the functions related to crawling websites for content.
     - ```Crawling all.ipynb```: The notebook contains all the codes for crawling. All the functions are written in full.
     - ```Crawling demo.ipynb```: The notebook contains the demo of the crawling functions. The functions are imported from the .py files in the ```get_content``` folder.
+    - ```Scrape demo (tds).ipynb```: The notebook contains scraping of Medium publishers. In the actual use case, to avoid latency, we crawled 2-year worth of content on Medium (2019+2020) and stored it locally. This file contains the code for scraping a sample publisher (Toward Data Science). Other publishers' content can be retrieved by replacing the publisher URL accordingly.  
 - ```Summarization```: The folder contains all the functions related to summarization methods.
     - ```Summarization all.ipynb```: The notebook contains all the codes for summarization. All the functions are written in full.
     - ```Summarization demo.ipynb```: The notebook contains the demo of the summarization functions. The functions are imported from the .py files in the ```summary``` folder.
