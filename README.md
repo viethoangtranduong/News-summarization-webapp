@@ -7,8 +7,8 @@ Website: http://viethoangtranduong.pythonanywhere.com/
 ## Structure
 
 There are 2 versions and 3 folders:  
-- (Lite version) The ```full_capstone``` includes all the functionalities.  
-- (Full version) The ```xlite_capstone``` is the smaller version, with all the functionalities except the Bert summarization models (HuggingFace + Bert-extractive).  
+- (Full version) The ```full_capstone``` includes all the functionalities.  
+- (Xlite version) The ```xlite_capstone``` is the smaller version, with all the functionalities except the Bert summarization models (HuggingFace + Bert-extractive).  
 - The ```Demo capstone``` is the Jupyter notebooks demoing every functions and its output for the web app.
 
 The current deploying model on the website is the ```xlite_capstone``` version to maintain the efficient cost. The code structures are listed within each folder.  
