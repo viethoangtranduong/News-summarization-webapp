@@ -1,8 +1,61 @@
-# flask_example
-A very simple example and tutorial on Flask which shows how to do 3 things:-
+# What's new 
+## _The web app repo_
 
-1. Accepting input from user
-2. Do something with the user input (for ex, call a python function on this input)
-3. Pass the output of the python function to another HTML as a variable and present the user back with this new HTML.
+The file structure for the web app running at ""
 
-To read a simple tutorial on this code base and for exaplanation navigate to: https://spandan-madan.github.io/flask_example/
+- ```application.py```: the flask app framework
+- ```requirements.txt```: the packages required to run the flask app
+- ```README.md```: the introductory file
+- ```summary```: the folder containing the models for summarization codes
+    - ```vectorization/glove.6B.50d.txt```: the embeddings for vectorizing the text to float
+    - ```summarizer_{x}_model.py```: the function to summarize based on any given models 
+- ```get_content```: The folder containing python files to get content from external sourcesc(crawling functions)
+    - ```get_{x}.py```: file to crawl the content from x website
+- ```get_viz```: The folder to contain the visualization code, including the word cloud and most frequent plot. 
+    - ```{viz_type}_viz.py```: the file to create the viz_type
+    - ```show_viz_choice.py```: the abstract file to handle edge cases for the visualization code
+- ```medium_data```: crawled data for Medium publishers
+- ```static```: css + image component for the web app
+- ```template```: HTML file for the web app
+
+
+## Steps to run the code
+
+Move the local directory to the current xlite_capstone folder
+
+### Step 1: virtual environment
+#### 1.1. Create virtual environment:
+```
+virtualenv xlite_capstone_venv
+```
+
+#### 1.2. Activate virtual environment
+On Windows: 
+```
+xlite_capstone_venv\Scripts\activate
+```
+On Linux/Ubuntu:
+```
+xlite_capstone_venv/bin/activate
+```
+
+### Step 2: Install dependencies
+```
+pip install -r requirements.txt
+```
+(or pip3, depending on your default pip version)
+
+For Pytorch, follow the instructions here to make it most compatible with your device: https://pytorch.org/get-started/locally/
+
+### Step 3: Unzip the embeddings
+Unzip the embeddings file at ```xlite_capstone/summary/vectorization/glove.6B.50d.zip``` and store the ```glove.6B.50d.txt``` file under ```xlite_capstone/summary/vectorization/glove.6B.50d.txt```
+
+### Step 4: Run web app:
+```
+python application.py
+```
+(or python3, depending on your default python)
+
+
+### Step 5: Interact with web app:
+The web app should be ready at ```http://127.0.0.1:5000/``` or ```localhost:5000```
