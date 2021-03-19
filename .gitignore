@@ -1,0 +1,8 @@
+# embeddings
+/xlite_capstone/summary/vectorization/glove.6B.50d.txt
+
+# venv
+/xlite_capstone/xlite_capstone_venv
+
+# img output
+/xlite_capstone/static/image_output/*
