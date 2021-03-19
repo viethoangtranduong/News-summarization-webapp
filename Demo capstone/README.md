@@ -20,7 +20,7 @@ The file structure for this ```Demo capstone```:
 
 
 ## Code access
-The full code is here: [Google Drive](https://drive.google.com/drive/folders/1GvhM2SwtNpjWqHrdry-2EFhJS3N_nFbT?usp=sharing)  
+The full code is here: [link (Google Drive)](https://drive.google.com/drive/folders/1GvhM2SwtNpjWqHrdry-2EFhJS3N_nFbT?usp=sharing)  
 (MSKGI access only)
 
-The embeddings and the hgf models can be found [here](https://drive.google.com/drive/folders/1ifPOnWqUXv2f5NR8nHgdAdUwFQVr-DiO?usp=sharing) or in the above ```GGDrive/Model```
+The embeddings and the hgf models can be found [here](https://drive.google.com/drive/folders/1ifPOnWqUXv2f5NR8nHgdAdUwFQVr-DiO?usp=sharing) or in the above ```GGDrive/Models```
