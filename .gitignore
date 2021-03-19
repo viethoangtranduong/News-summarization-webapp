@@ -22,3 +22,6 @@
 
 # images output
 /full_capstone/static/image_output/*
+
+# cache
+/full_capstone/build/*
