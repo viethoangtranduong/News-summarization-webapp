@@ -17,6 +17,7 @@ The file structure for this ```Demo capstone```:
     - ```[Test] Visualize ROUGE score.ipynb```: The notebook to visualize the ROUGE score performance of the models, including histograms and half-violin plots, with the 95% confidence interval.
     - ```summarized.csv```: summaries output of the test data.
     - ```RNN_lstm```: The notebook to apply RNN + LSTM. However, this idea was not implemented in the web app version due to uncontrollable and poor performance. 
+    - ```Vanilla Bert.ipynb```: The notebook for Vanilla Bert. However, this model was not trained as it's computationally expensive the the pretrained model is better in performance and more efficient. 
 - ```Visualization```: The folder contains all the functions related to visuailizing the content.
     - ```Visualization all.ipynb```: The notebook contains all the codes for visualization. All the functions are written in full.
     - ```Visualization demo.ipynb```: The notebook contains the demo of the visualization functions. The functions are imported from the .py files in the ```get_viz``` folder. 
