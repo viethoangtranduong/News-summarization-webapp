@@ -1,5 +1,7 @@
 # Demo capstone
 
+If you want to run the ```Demo capstone```, I prepared a Google Drive folder with the Colab Notebooks to run these Jupyter Notebooks. This way, you can save time for installations and make sure all the versions are compatible. Also, it can save your computational power compared to if you run them locally.[Link](https://drive.google.com/drive/folders/1GvhM2SwtNpjWqHrdry-2EFhJS3N_nFbT?usp=sharing)
+
 ## The demo results folder
 
 The file structure for this ```Demo capstone```:
